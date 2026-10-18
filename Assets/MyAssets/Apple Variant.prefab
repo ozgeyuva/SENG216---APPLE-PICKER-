@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7612947892002279736, guid: 48898cf16cf31fb42b6e072e0622c9de, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612947892002279736, guid: 48898cf16cf31fb42b6e072e0622c9de, type: 3}
+      propertyPath: m_TagString
+      value: Apple
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

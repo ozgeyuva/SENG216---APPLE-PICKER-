@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6079540785776242331, guid: ce9520f263a539743aa91faf78eea596, type: 3}
       propertyPath: m_Name
-      value: Basket_01_light Variant
+      value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079540785776242331, guid: ce9520f263a539743aa91faf78eea596, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7063201101266803848, guid: ce9520f263a539743aa91faf78eea596, type: 3}
       propertyPath: m_LocalScale.x
@@ -71,5 +75,25 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6079540785776242331, guid: ce9520f263a539743aa91faf78eea596, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -614765154172283546}
   m_SourcePrefab: {fileID: 100100000, guid: ce9520f263a539743aa91faf78eea596, type: 3}
+--- !u!1 &5193901910484927571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6079540785776242331, guid: ce9520f263a539743aa91faf78eea596, type: 3}
+  m_PrefabInstance: {fileID: 2038631338128206536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-614765154172283546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193901910484927571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7c2f51213016746af23a06b937fca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Basket
