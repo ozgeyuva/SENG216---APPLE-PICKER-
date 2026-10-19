@@ -28,17 +28,19 @@ public class Basket : MonoBehaviour
         this.transform.position = pos;  
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        GameObject collideWith = collision.gameObject;
-
-        if (collideWith.CompareTag("Apple"))
+        if (other.CompareTag("Apple"))
         {
-            Destroy(collideWith);
+            
+            Destroy(other.gameObject);
+        }
+    
 
             //scoreCounter.score += 100;
             //HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
 
         }
     }
-}
+
+

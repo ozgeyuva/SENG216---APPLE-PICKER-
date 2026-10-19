@@ -5,6 +5,7 @@ using Random = System.Random;
 public class AppleTree : MonoBehaviour
 {
     [SerializeField] private Transform appleSpawnPoint;
+    [SerializeField] private ApplePicker applePicker;
     public float speed = 5f;
     public float leftAndRightEdge = 10f;
     public float changeDirChange = 0.1f;
@@ -43,7 +44,18 @@ public class AppleTree : MonoBehaviour
     {
         if (applePrefab != null && appleSpawnPoint != null)
         {
-            Instantiate(applePrefab, appleSpawnPoint.position, Quaternion.identity);
+            GameObject newApple = Instantiate(
+                applePrefab,
+                appleSpawnPoint.position,
+                Quaternion.identity
+            );
+
+            Apple appleScript = newApple.GetComponent<Apple>();
+
+            if (appleScript != null && applePicker != null)
+            {
+                appleScript.onAppleMissed.AddListener(applePicker.AppleMissed);
+            }
         }
     }
 }
