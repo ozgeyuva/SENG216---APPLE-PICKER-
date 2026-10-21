@@ -3,13 +3,13 @@ using UnityEngine;
 public class Basket : MonoBehaviour
 {
 
-                 //public ScoreCounter scoreCounter;
+                 public ScoreCounter scoreCounter;
    
     void Start()
     {
         GameObject ScoreGO = GameObject.Find("ScoreCounter");
 
-              //scoreCounter = ScoreGO.GetComponent<ScoreCounter>();
+              scoreCounter = ScoreGO.GetComponent<ScoreCounter>();
     }
 
     
@@ -34,13 +34,12 @@ public class Basket : MonoBehaviour
         {
             
             Destroy(other.gameObject);
-        }
-    
 
-            //scoreCounter.score += 100;
-            //HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
+            scoreCounter.score += 100;
+    
+            HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
 
         }
     }
 
-
+}
